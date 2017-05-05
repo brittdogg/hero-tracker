@@ -1,0 +1,65 @@
+# NetBeans gitignore
+
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# IntelliJ gitignore
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+/out/
+
+# Maven gitignore
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Exclude maven wrapper
+!/.mvn/wrapper/maven-wrapper.jar
+
+
+# Java gitignore
+
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+
+# Personal gitignore
+*.swp
+/milestone3/Section03UnitTests/nbproject/
+/milestone3/ClassRoster/nbproject/
+/milestone3/DVDLibrary/nbproject/
+/milestone3/AddressBook/nbproject/
+/milestone3/VendingMachine/nbproject/
+/milestone4/VendingMachine/nbproject/
+/milestone4/DVDLibrary/nbproject/
+/FlooringMastery/nbproject/
+*.zip
+/mvc/ContactsList/nbproject/
+/jdbc/ContactsList/nbproject/
+/jdbc/Library/nbproject/
+/jdbc/HeroTracker/nbproject/
