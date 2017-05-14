@@ -144,7 +144,7 @@
                                     <img class="orgThumb" height="50" width="50" alt="locImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/location/editLocation?orgId=${loc.locationId}"><strong>${loc.name} - ${loc.address.city}, ${loc.address.state}</strong></a>
+                                    <a href="${pageContext.request.contextPath}/location/editLocation?orgId=${loc.locationId}"><strong>${loc.name} - ${loc.address.city}, ${loc.address.state}</strong></a>
                                 </div>
                                 <div class="col-md-2">
                                     <form role="form" method="POST" action="location/deleteLocation">

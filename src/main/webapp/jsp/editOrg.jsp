@@ -140,7 +140,7 @@
                             </button>
                         </div>
                     </sf:form>
-                    <a href="/HeroTracker/organization"><u><< Organizations</u></a>
+                    <a href="${pageContext.request.contextPath}/organization"><u><< Organizations</u></a>
                     <br/><br/>
                 </div>
 
@@ -163,7 +163,7 @@
                                     <img class="heroThumb" height="50" width="50" alt="heroImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/hero/editHero?heroId=${member.hero.heroId}"><strong>${member.hero.name}</strong></a>
+                                    <a href="${pageContext.request.contextPath}/hero/editHero?heroId=${member.hero.heroId}"><strong>${member.hero.name}</strong></a>
                                 </div>
                                 <div class="col-md-2">
                                     <form role="form" method="POST" action="/HeroTracker/organization/removeMember">

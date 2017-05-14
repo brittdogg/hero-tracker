@@ -108,7 +108,7 @@
                                     <img class="orgThumb" height="50" width="50" alt="orgImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/organization/editOrg?orgId=${org.orgId}"><strong>${org.name}</strong></a>
+                                    <a href="${pageContext.request.contextPath}/organization/editOrg?orgId=${org.orgId}"><strong>${org.name}</strong></a>
                                 </div>
                                 <div class="col-md-2">
                                     <form role="form" method="POST" action="organization/deleteOrg">

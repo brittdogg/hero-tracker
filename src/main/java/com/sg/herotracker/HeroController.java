@@ -61,7 +61,8 @@ public class HeroController {
         heroService.deleteHero(heroId);
         return "redirect:/hero";
     }
-    
+
+    //TODO Use @ModelAttribute here.
     @RequestMapping(value="/editHero", method=RequestMethod.GET)
     public String showHeroEdit(HttpServletRequest request, Map<String, Object> model) {
         int heroId = Integer.parseInt(request.getParameter("heroId"));

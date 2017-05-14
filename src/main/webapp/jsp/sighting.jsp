@@ -43,13 +43,13 @@
                     <div>
                         <h3>Sighting Report<c:if test="${sighting != null}"> : ${sighting.location.address.city} - ${sighting.dateOccurred}</c:if></h3>
                         </div>
-                        <form role="form" action="/HeroTracker/sighting/reportSighting" method="POST">
+                        <form role="form" action="${pageContext.request.contextPath}/sighting/reportSighting" method="POST">
                             <div class="form-group">
 
                                 <label for="sightingDate">
                                     Date:
                                 </label>
-                                <input class="form-control" name="sightingDate" type="date">
+                                <input class="form-control" name="sightingDate" type="datetime-local">
                             </div>
                             <div class="form-group">
 

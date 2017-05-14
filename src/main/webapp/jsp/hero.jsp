@@ -84,7 +84,7 @@
                                     <img class="heroThumb" height="50" width="50" alt="heroImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/hero/editHero?heroId=${hero.heroId}"><strong>${hero.name}</strong> - <em>${hero.power.name}</em></a>
+                                    <a href="${pageContext.request.contextPath}/hero/editHero?heroId=${hero.heroId}"><strong>${hero.name}</strong> - <em>${hero.power.name}</em></a>
                                 </div>
                                 <div class="col-md-2">
                                     <form role="form" method="POST" action="hero/deleteHero">

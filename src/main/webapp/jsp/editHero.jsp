@@ -100,7 +100,7 @@
                             </button>
                         </div>
                     </sf:form>
-                    <a href="/HeroTracker/hero"><u><< Heroes</u></a>
+                    <a href="${pageContext.request.contextPath}/hero"><u><< Heroes</u></a>
                 </div>
 
                 <!-- Relationship editing section.  -->
@@ -122,7 +122,7 @@
                                     <img class="heroThumb" height="50" width="50" alt="heroImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/organization/editOrg?orgId=${membership.org.orgId}"><strong>${membership.org.name}</strong></a>
+                                    <a href="${pageContext.request.contextPath}/organization/editOrg?orgId=${membership.org.orgId}"><strong>${membership.org.name}</strong></a>
                                 </div>
                                 <div class="col-md-2">
                                     <form role="form" method="POST" action="/HeroTracker/organization/removeMember">
@@ -179,7 +179,7 @@
                                     <img class="heroThumb" height="50" width="50" alt="heroImg" src="https://s-media-cache-ak0.pinimg.com/736x/2a/23/55/2a2355413c128b319e04ae8f6ebe2a7f.jpg"/>
                                 </div>
                                 <div class="col-md-8">
-                                    <a href="/HeroTracker/sighting/editSighting?sightingId=${heroSighting.sighting.sightingId}">
+                                    <a href="${pageContext.request.contextPath}/sighting/editSighting?sightingId=${heroSighting.sighting.sightingId}">
                                         <strong>${heroSighting.sighting.dateOccurred} - 
                                             ${heroSighting.sighting.location.address.city}, ${heroSighting.sighting.location.address.state}</strong>
                                     </a>
@@ -201,12 +201,12 @@
                                 <img class="newThumb" height="50" width="50" alt="newImg" src="http://orig04.deviantart.net/fc6f/f/2011/202/c/9/superman_icon_2_by_jeremymallin-d417prm.png"/>
                             </div>
                             <div class="col-md-8">
-                                <a href="/HeroTracker/sighting/reportSighting">
+                                <a href="${pageContext.request.contextPath}/sighting/reportSighting">
                                     <strong>Report Sighting of ${hero.name}</strong>
                                 </a>
                             </div>
                             <div class="col-md-2">
-                                <a href="/HeroTracker/sighting/reportSighting">
+                                <a href="${pageContext.request.contextPath}/sighting/reportSighting">
                                     <button type="button"
                                             class="btn btn-success"><strong>+</strong></button>
                                 </a>
